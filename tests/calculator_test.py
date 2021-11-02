@@ -1,4 +1,5 @@
 """Testing the Calculator"""
+import pytest
 from calculator.main import Calculator
 
 def test_calculator_result():
@@ -35,3 +36,8 @@ def test_calculator_division():
     calc = Calculator()
     result = calc.division_numbers(1,2)
     assert result == 0.5
+def test_calculator_division_exception():
+    """ division exception """
+    calc = Calculator()
+    with pytest.raises(ZeroDivisionError):
+        result = calc.division_numbers(1, 0)
