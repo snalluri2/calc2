@@ -22,9 +22,5 @@ class Calculator:
 
     def division_numbers(self, value_a, value_b):
         """ division two numbers and store the result"""
-        try:
         self.result = value_a / value_b
         return self.result
-        except ZeroDivisionError:
-            print("Zero Division Exception")
-
