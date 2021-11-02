@@ -34,9 +34,10 @@ def test_calculator_multiply():
 def test_calculator_division():
     """ division two numbers and store the result"""
     calc = Calculator()
-    result = calc.division_numbers(1,2)
-    assert result == 0.5
+    result = calc.division_numbers(1,1)
+    assert result == 1
 def test_calculator_division_exception():
     """ division exception """
     calc = Calculator()
-    result = calc.division_numbers(1, 2)
+    with pytest.raises(ZeroDivisionError):
+        calc.division_numbers(1,0)
