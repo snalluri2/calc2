@@ -33,5 +33,5 @@ def test_calculator_multiply():
 def test_calculator_division():
     """ division two numbers and store the result"""
     calc = Calculator()
-    result = calc.division_numbers(1,2)
-    assert result == 0.5
+    result = calc.division_numbers(1,0)
+    assert result == ZeroDivisionError
