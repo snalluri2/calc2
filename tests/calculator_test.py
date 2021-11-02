@@ -30,3 +30,8 @@ def test_calculator_multiply():
     calc = Calculator()
     result  = calc.multiply_numbers(1,2)
     assert result == 2
+def test_calculator_division():
+    """ division two numbers and store the result"""
+    calc = Calculator()
+    result = calc.division_numbers(1,2)
+    assert result == 0.5
