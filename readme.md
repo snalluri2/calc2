@@ -1,5 +1,5 @@
 # Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/snalluri2/calc2.svg?branch=main)](https://app.travis-ci.com/snalluri2/calc2)
+[![Build Status](https://app.travis-ci.com/snalluri2/calc2.svg?branch=Refactor_calc)](https://app.travis-ci.com/snalluri2/calc2)
 Run Pip Install
 pip install -r requirements.txt
 
